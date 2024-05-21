@@ -8,3 +8,4 @@ def add_route():
     num2 = int(request.args.get('num2',0))
     result = add(num1,num2)
     return jsonify({'result':result})
+
