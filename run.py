@@ -1,12 +1,14 @@
 from flask import Flask
 from add_app import addition_bp
 from divide_app import divide_bp
+from multiply_app import multiply_bp
 def create_app():
     app = Flask(__name__)
 
     #blueprints
     app.register_blueprint(addition_bp)
     app.register_blueprint(divide_bp)
+    app.register_blueprint(multiply_bp)
     
 
     return app
